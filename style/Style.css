@@ -1,0 +1,369 @@
+/* este asterisco señala que toda la pagina tiene posicion relativa para sus animaciones */
+* { 
+    position: relative;
+}
+body { 
+    background: rgb(41,38,43);
+    background: linear-gradient(0deg, rgba(41,38,43,1) 0%, rgba(20,19,20,1) 62%, rgba(15,14,14,1) 100%); 
+    background-size: cover;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+/* boton de login del header */
+#loginbtn { 
+    border-radius: 12px;
+    border: none;
+    color: aliceblue;
+    margin-right: 10px;
+    font-weight: 600;
+    background: rgb(86,195,19);
+    background: linear-gradient(90deg, rgba(86,195,19,1) 0%, rgba(24,98,37,1) 100%); 
+}
+/* boton de register del header */
+#registerbtn { 
+    color: aliceblue;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+
+#header { 
+    background: hsl(300, 4%, 9%);
+    background: radial-gradient(circle, rgba(25,23,25,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); 
+    background-size: cover;
+}
+
+/* este titulo es del contenido del header */
+#titleheader { 
+    margin-top: 6rem;
+    font-weight: 700;
+    color: aliceblue;
+    font-style: unset;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0px 1px 2px #f702ff;
+}
+/* esta descripcion es del contenido del header */
+.descriptionheader { 
+    color: antiquewhite;
+    font-style: oblique;
+    font-weight: 600;
+}
+/* esta imagen es parte del contenido del header */
+#headerimg { 
+    width: 80em;
+    margin-left: 23px;
+    
+}
+
+
+
+
+
+
+
+
+/* inicio de la seccion de redes sociales */
+#socialNetworks span {   
+    font-size: 50px;
+    color: aqua;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#socialNetworks a {    
+    text-decoration: none;
+}
+/* inicio de la seccion de cargadores */
+#charger-section { 
+    padding-bottom: 9rem;
+}
+/* titulos de la seccion de cargadores */
+#charger h3 { 
+    margin-top: 8rem; 
+    
+    font-weight: 600; 
+    color: whitesmoke; 
+}
+/* descripcion de la seccion de cargadores */
+#charger p { 
+    margin-top: 8rem; 
+    margin-top: 8rem;
+     border-bottom: solid 1px #f702ff; 
+    padding-bottom: 8px;
+    font-weight: 600; 
+    color: whitesmoke; 
+}
+/* inicio edicion de las tarjetas de los productos del carrusel */
+    #card1 {
+        position: relative;
+        width: 320px;
+        height: 420px;
+        background-color:#f702ff;
+        border-radius: 20px;
+        overflow: hidden;
+        top: 40px;
+        
+    }
+    #card1::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        height: 70%;
+        background-color: #29262b;
+        transform: skewY(345deg);
+        transition: 0.5s;
+    }
+    #card1:hover::before {
+       top: -40%;
+       transform: skewY(390deg);
+    }
+    #card1::after {
+        content: "";
+        position:absolute;
+        bottom: 0;
+        left: 0;   
+    }
+    #card1 #imgBx {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        z-index: 1;
+    }
+    #card1 #imgBx img {
+        max-width: 100%;
+        transition: 0.5s;
+    }
+    #card1:hover #imgBx img {
+        max-width: 50%;
+    }
+    #card1 #contentBx  {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 800;
+        font-family: cursive;
+    }
+    #card1 #contentBx #title {
+        font-size: 18px;
+        color: #29262b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #card1 #contentBx #price {
+        font-size: 24px;
+        color: #29262b;
+        letter-spacing: 1px;
+    }
+    #card1 #contentBx #buy {
+        position: relative;
+        top: 200px;
+        opacity: 0;
+        padding: 10px 30px;
+        margin-top: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #29262b;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #card1:hover #contentBx #buy {
+        top: 0;
+        opacity: 1;
+    }
+/* fin de la edicion */
+/* carrusel para la seccion de cargadores */
+
+/* fin del carrusel de los cargadores */
+
+
+
+
+
+
+
+
+/* seccion de ventas de audifonos */
+#hearphones-section { 
+    background-image: url(/img/pictures/bg-1.jpeg);
+    background-size: cover;
+    background-position: center ;
+    padding-bottom: 9em;;
+}
+
+/* titulo de la seccion de audifonos */
+#hearphones h3 { 
+    margin-top: 8rem; 
+    
+    font-weight: 600; 
+    color: whitesmoke; 
+}
+/* descripcion de la seccion de ventas de audifonos */
+#hearphones p { 
+    border-bottom: solid 1px #9acd32; 
+    padding-bottom: 8px;
+    margin-top: 8rem; 
+    font-weight: 600; 
+    color: whitesmoke; 
+}
+/* inicio edicion de las tarjetas de los productos del carrusel */
+    #card2 {
+        position: relative;
+        width: 320px;
+        height: 420px;
+        background-color: #9acd32;
+        border-radius: 20px;
+        overflow: hidden;
+        top: 40px;
+        
+    }
+    #card2::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        height: 70%;
+        background-color: #29262b;
+        transform: skewY(345deg);
+        transition: 0.5s;
+    }
+    #card2:hover::before {
+       top: -40%;
+       transform: skewY(390deg);
+    }
+    #card2::after {
+        content: "";
+        position:absolute;
+        bottom: 0;
+        left: 0;   
+    }
+    #card2 #imgBx {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        z-index: 1;
+    }
+    #card2 #imgBx img {
+        max-width: 100%;
+        transition: 0.5s;
+    }
+    #card2:hover #imgBx img {
+        max-width: 50%;
+    }
+    #card2 #contentBx  {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 800;
+        font-family: cursive;
+    }
+    #card2 #contentBx #title {
+        font-size: 18px;
+        color: #29262b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #card2 #contentBx #price {
+        font-size: 24px;
+        color: #29262b;
+        letter-spacing: 1px;
+    }
+    #card2 #contentBx #buy {
+        position: relative;
+        top: 200px;
+        opacity: 0;
+        padding: 10px 30px;
+        margin-top: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #29262b;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #card2:hover #contentBx #buy  {
+        top: 0;
+        opacity: 1;
+    }
+/* fin de la edicion */
+
+/* inicio del carrusel de los audifonos */
+
+
+
+
+/* fin del carrusel de los audifonos */
+
+
+
+
+@media screen and (max-width: 980px) {
+    
+    .carrusel   {
+        width: 250px;
+        height: 300px;
+        left: 0%;
+        right: 20%;
+    }
+  
+}
+
+
+@media screen and (max-width: 780px) {
+    
+    .carrusel  {
+        width: 250px;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    
+    .carrusel   {
+        width: 250px;
+        height: 300px;
+        left: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .carrusel   {
+        width: 250px;
+        height: 300px;
+        left: 14%;
+        right: 20%;
+    }
+  
+}
+
+@media screen and (max-width: 380px) {
+    
+    .carrusel   {
+        width: 250px;
+        height: 300px;
+        left: 3%;
+        right: 20%;
+    }
+  
+}
+
+
+
