@@ -10,244 +10,137 @@
   <title>TechnoMonster</title>
 </head>
 <body>
-  <!-- header-primera seccion -->
-  <div id="header" class="container-lg">
-    <!-- barra de navegacion -->
+  <!-- Header Section -->
+  <header class="container-lg">
     <nav class="navbar navbar-expand-md navbar-dark" style="background-color: transparent;">
       <div class="container-fluid">
-        <!-- logo de la empresa -->
-        <img src="/img/icons/logo-de-empresa.png" alt="*" class="img-fluid" style="width: 85px; height: auto;">
+        <img src="/img/icons/logo-de-empresa.png" alt="Logo de la empresa" class="img-fluid" style="width: 85px; height: auto;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- boton de inicio -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
-            <!-- boton despegable de la tienda funciona como indice de la pagina -->
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tienda
-              </a>
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#hearphones-section">Audífonos</a></li>
-                <li><a class="dropdown-item" href="#charging">Cargadores</a></li>
-                <li><a class="dropdown-item" href="#">Telefonos</a></li>
+                <li><a class="dropdown-item" href="#charger-section">Cargadores</a></li>
+                <li><a class="dropdown-item" href="#">Teléfonos</a></li>
               </ul>
             </li>
-            <!-- contactanos, boton despegable -->
             <li class="nav-item">
               <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contáctanos</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="img/icons/carrito-de-compras.png" alt="*" class="img-fluid" style="width: 28px; height:85%; margin-top: 3px; " >
+              <a class="nav-link active" href="#" id="navbarDropdownCart" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/icons/carrito-de-compras.png" alt="Carrito de compras" class="img-fluid" style="width: 28px; height:85%; margin-top: 3px;">
                 <span class="badge bg-danger">3</span>
               </a>
-              <ul><li><hr class="dropdown-divider"></li></ul>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownCart">
                 <li><a class="dropdown-item" href="#">i12</a></li>
                 <li><a class="dropdown-item" href="#">Kouders Universal</a></li>
                 <li><a class="dropdown-item" href="#">Samsung Galaxy S21</a></li>
               </ul>
-            </li>   
+            </li>
           </ul>
-          <!-- botones de register y login -->
-          <button class="btn" type="submit" id="registerbtn">Register</button>
-          <button class="btn" type="submit" id="loginbtn">Login</button>
+          <button class="btn" type="button" id="registerbtn">Register</button>
+          <button class="btn" type="button" id="loginbtn">Login</button>
         </div>
       </div>
     </nav>
-    
-    <!-- contenido del header -->
-    <div class="container-sm" class="header-content">
-      <div class="row justify-content-sm">
-        <div class="col-12" >
-          
-        </div>
-      </div>
+
+    <div class="header-content">
       <div class="row justify-content-sm">
         <div class="col-sm-5">
-          <h2 class="display-4" id="titleheader" data-0-top="opacity:0;left:100px;" data-100-top="opacity:1;left:0px;"> Nueva Generación </h2>
-          <p class="descriptionheader" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px;">El Iphone 12 ahora con 218 / 5000 Resultados de traducción
-            Velocidad 5G. A14 Bionic, el chip más rápido en un teléfono inteligente.
-            Una pantalla OLED de borde a borde. Escudo de cerámica con un rendimiento de caída cuatro veces superior.
-            Y modo nocturno en todas las cámaras. El iPhone 12 lo tiene todo, en dos tamaños perfectos. </p>
-            <button type="button" class="btn" style="  border-radius: 12px; padding:15px; background-color: blueviolet; color: cornsilk" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px;">
-              Comprar</button>
-            </div>
-            <div class="col-sm-7">
-              <img src="img/pictures/pic-1.png" alt="*" class="img-fluid" id="headerimg" style="margin-top: 12rem;">
-            </div>
+          <h2 class="display-4" id="titleheader">Nueva Generación</h2>
+          <p class="descriptionheader">El Iphone 12 ahora con 218 / 5000 Resultados de traducción. Velocidad 5G. A14 Bionic, el chip más rápido en un teléfono inteligente. Una pantalla OLED de borde a borde. Escudo de cerámica con un rendimiento de caída cuatro veces superior. Y modo nocturno en todas las cámaras. El iPhone 12 lo tiene todo, en dos tamaños perfectos.</p>
+          <button type="button" class="btn" style="border-radius: 12px; padding: 15px; background-color: blueviolet; color: cornsilk;">Comprar</button>
+        </div>
+        <div class="col-sm-7">
+          <img src="img/pictures/pic-1.png" alt="Imagen del producto" class="img-fluid" id="headerimg" style="margin-top: 12rem;">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Charger Section -->
+  <section id="charger-section" class="container-lg">
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <h3 class="display-3">Cargadores</h3>
+      </div>
+      <div class="col-md-4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A molestiae saepe animi suscipit non at vel minus tempora ex quae. Quam exercitationem illo tempore similique suscipit! Quisquam dolore officiis molestiae.</p>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <img src="/img/products/cargadores/cargador-de-muestra.png" alt="Cargador de muestra" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <div id="card1" class="carrusel">
+          <div id="imgBx">
+            <img src="/img/products/cargadores/cargador-3.png" alt="Cargador inalámbrico">
+          </div>
+          <div id="contentBx">
+            <p id="title">Cargador Inalámbrico</p>
+            <p id="price">49 <small>.99</small></p>
+            <a href="#" id="buy">Comprar</a>
           </div>
         </div>
       </div>
-      
-      
-      <!-- inicio de la seccion de cargadores -->
-      <section id="charger-section" class="container-lg">
-        <!-- aqui inician las filas y columnas -->
-        <div class="row justify-content-around" id="charger">
-          <!-- titulo --------->
-          <div class="col-md-4"> 
-            <h3 class=" display-3" data-center-center="opacity:1;right:0px;" data-0-bottom="opacity:0;right:200px;">Cargadores</h3>
+    </div>
+  </section>
+
+  <!-- Social Networks Section -->
+  <section id="socialNetworks" class="container-lg">
+    <div class="row justify-content-center">
+      <div class="col-lg-3" style="padding: 2rem;">
+        <a href="#"><span style="background: -webkit-linear-gradient(0deg, #f9ed32 0%, #C850C0 46%, #ee2a7b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Instagram</span></a>
+      </div>
+      <div class="col-lg-3" style="padding: 2rem;">
+        <a href="#"><span style="background: -webkit-linear-gradient(90deg, #00B2FF 0%, #006AFF 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Facebook</span></a>
+      </div>
+      <div class="col-lg-3" style="padding: 2rem;">
+        <a href="#"><span style="text-align: center;">Twitter</span></a>
+      </div>
+      <div class="col-lg-3" style="padding: 2rem;">
+        <a href="#"><span style="color: #25D366;">Whatsapp</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Headphones Section -->
+  <section id="hearphones-section" class="container-lg">
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <h3 class="display-3">Audífonos</h3>
+      </div>
+      <div class="col-md-4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A molestiae saepe animi suscipit non at vel minus tempora ex quae. Quam exercitationem illo tempore similique suscipit! Quisquam dolore officiis molestiae.</p>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-md-4">
+        <img src="img/products/audifonos/audifonos-de-muestra.png" alt="Audífonos de muestra" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <div id="card2" class="carrusel">
+          <div id="imgBx">
+            <img src="/img/products/audifonos/audifonos-3.png" alt="Audífonos gaming Focal">
           </div>
-          <!-- descripcion -->
-          <div class="col-md-4">
-            <p data-center-center="opacity:1;left:0px;" data-0-bottom="opacity:0;left:200px;">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A molestiae saepe animi suscipit non at vel minus tempora ex quae.
-              Quam exercitationem illo tempore similique suscipit! Quisquam dolore officiis molestiae.</p>
-            </div>
+          <div id="contentBx">
+            <p id="title">Audífonos gaming Focal</p>
+            <p id="price">49 <small>.99</small></p>
+            <a href="#" id="buy">Buy Now</a>
           </div>
-          <!-- aqui inician otras filas y columnas, esta es para mostrar el catalogo de los cargadores -->
-          <div class="row justify-content-around">
-            <div class="col-md-4">
-              <img src="/img/products/cargadores/cargador-de-muestra.png" alt="*" class="img-fluid" data-center-center="opacity:1;right:0px;" data-100-bottom="opacity:0;right:200px;">
-            </div>
-            <!-- aqui va un carrusel -->
-            <div class="col-md-4">
-              <div style="align-content: center;">
-                <div id="card1" class="carrusel">
-                  <div id="imgBx">
-                    <img src="/img/products/cargadores/cargador-3.png" alt="*">
-                  </div>
-                  
-                  <div id="contentBx">
-                    <p id="title">Cargador Inalámbrico</p>
-                    <p id="price">49 <small>.99</small></p>
-                    <a href="" id="buy">Comprar</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- aqui termina el carrusel -->
         </div>
       </div>
-    </section>
-    
-    
-    
-    <!-- seccion de las redes sociales -->
-    <section id="socialNetworks" class="container-lg">
-      <div class="row justify-content-center">
-        
-        <div class="col-lg-3" style="padding:2rem;">
-          <a href=""><span style="background: -webkit-linear-gradient(0deg, #f9ed32 0%, #C850C0 46%,#ee2a7b 100%);
-            -webkit-background-clip: text;-webkit-text-fill-color:transparent;">
-            Instagram</span></a>           
-          </div>
-          
-          <div class="col-lg-3" style="padding:2rem;">
-            <a href=""><span style="background: -webkit-linear-gradient(90deg, #00B2FF 0%, #006AFF 100%); 
-              -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Facebook</span></a>
-            </div>
-            
-            <div class="col-lg-3" style="padding:2rem;">
-              <a href=""><span style="text-align: center;">Twitter</span></a>
-            </div>
-            
-            <div class="col-lg-3" style="padding:2rem;">
-              <a href=""><span style="color:#25D366">Whatsapp</span></a>
-            </div>
-          </div>
-        </section>
-        
-        
-        
-        <!-- seccion de los audifonos -->
-        <section id="hearphones-section" class="container-lg">
-          <!-- aqui inician las filas y columnas -->
-          <div class="row justify-content-around" id="hearphones">
-            <div class="col-md-4">
-              <!-- titulo --------------->
-              <h3 class=" display-3" data-center-center="opacity:1;right:0px;" data-0-bottom="opacity:0;right:200px;">Audífonos</h3>
-            </div>
-            <div class="col-md-4">
-              <!-- descripcion --------------->
-              <p data-center-center="opacity:1;left:0px;" data-0-bottom="opacity:0;left:200px;">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A molestiae saepe animi suscipit non at vel minus tempora ex quae.
-                Quam exercitationem illo tempore similique suscipit! Quisquam dolore officiis molestiae.</p>
-              </div>
-            </div>
-            <!-- aqui inician filas y colunas nuevas, esta parte es el catalogo de los productos -->
-            <div class="row justify-content-around" id="catalogo">
-              <div class="col-md-4">
-                <img src="img/products/audifonos/audifonos-de-muestra.png" alt="*" class="img-fluid" data-center-center="opacity:1;right:0px;" data-0-bottom="opacity:0;right:200px;">
-              </div>
-              <!-- aqui va el carrusel -->
-              <div class="col-md-4" data-center-center="opacity:1;left:0px;" data-0-bottom="opacity:0;left:200px;" id="carrusel-hearphones">
-                <div id="card2" class="carrusel">
-                  <div id="imgBx">
-                    <img src="/img/products/audifonos/audifonos-3.png" alt="*">
-                  </div>
-                  
-                  <div id="contentBx">
-                    <p id="title">Audífonos gaming Focal</p>
-                    <p id="price">49 <small>.99</small></p>
-                    <a href="" id="buy">Buy Now</a>
-                  </div>
-                </div>
-              </div>
-              <!-- aqui termina el carrusel -->
-            </div>
-          </section>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+    </div>
+  </section>
 
 <!-- esto es para la animacion al hacer scroll -->
 <script src="/javascrpit/skrollr.j"></script>
